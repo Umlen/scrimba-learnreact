@@ -10,9 +10,9 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
   min-height: 100%;
+  background-color: #282D35;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   background-color: #21222A;
   height: 91px;
-  padding: 0 30px;
+  padding: 0 80px;
 }
 
 .navbar--title {
@@ -47,4 +47,32 @@ body {
   color: #61DAFB;
   font-weight: 700;
   font-size: 22px;
+}
+
+.maincontent {
+  color: #fff;
+  padding: 55px 80px;
+  background-image: url('./images/react-logo-bg.png');
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: right 85%;
+}
+
+.maincontent--header {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: -.05em;
+}
+
+.maincontent--list {
+  margin-top: 46px;
+}
+
+.maincontent--list li {
+  padding-bottom: 20px;
+}
+
+.maincontent--list li::marker {
+  font-size: 1.5rem;
+  color: #61DAFB;
 }
