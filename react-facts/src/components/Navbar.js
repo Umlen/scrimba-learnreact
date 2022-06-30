@@ -3,10 +3,12 @@ import reactLogo from '../images/react-logo.png';
 
  const Navbar = () => {
     return (
-        <nav>
-            <img width = '40px' src = {reactLogo} alt = 'react-logo' />
-            <h3>ReactFacts</h3>
-            <h4>React Course - Project 1</h4>
+        <nav className = 'navbar'>
+            <div className = 'navbar--logo'>
+                <img className = 'navbar--logo_img' src = {reactLogo} alt = 'react-logo' />
+                <h3 className = 'navbar--logo_text'>ReactFacts</h3>
+            </div>
+            <h4 className = 'navbar--title'>React Course - Project 1</h4>
         </nav>
 
     );

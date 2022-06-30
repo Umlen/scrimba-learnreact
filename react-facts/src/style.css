@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #21222A;
+  height: 91px;
+  padding: 0 30px;
+}
+
+.navbar--title {
+  color: #DEEBF8;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navbar--logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar--logo_img {
+  margin-right: 7px;
+  width: 29px;
+  height: auto;
+}
+
+.navbar--logo_text {
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+}
