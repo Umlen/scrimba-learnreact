@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background-color: #23252C;
+    padding-bottom: 45px;
+}
+
+.maincontent {
+    background-color: #1A1B21;
+    width: 40%;
+    margin: 45px auto 0 auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.info--header {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info--subheader {
+    text-align: center;
+    color: #F3BF99;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+.info--mailBtn {
+    display: block;
+    margin: 32px 35px;
+    background-color: #fff;
+    line-height: 2.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.info--mailBtn:hover {
+    box-shadow: 1px 1px 3px 2px #fff;
+}
+
+.info--mailBtn:active {
+    box-shadow: inset 2px 2px 4px #374151;
+}
+
+.info--mailBtn_mailIcon {
+    padding-right: 5px;
+}
+
+.info--img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 18px;
+}
+
+.about {
+    padding: 0 35px;
+    color: #DCDCDC;
+    line-height: 1.2rem;
+}
+
+.about--header {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    color: #F5F5F5;
+}
+
+.about--text {
+    text-align: justify;
+}
+
+.interests {
+    padding: 0 35px;
+    color: #DCDCDC;
+    line-height: 1.2rem;
+    padding-bottom: 25px;
+}
+
+.interests--header {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 24px 0 10px 0;
+    color: #F5F5F5;
+}
+
+.interests--text {
+    text-align: justify;
+}
+
+.footer {
+    background-color: #161619;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;    
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 45px;
+}
