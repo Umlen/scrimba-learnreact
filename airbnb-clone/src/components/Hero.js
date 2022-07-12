@@ -1,10 +1,8 @@
-import photoGrid from '../images/photo-grid.png';
-
 const Hero = () => {
     return (
         <section className = 'hero'>
             <img 
-                src = {photoGrid} 
+                src = '../images/photo-grid.png' 
                 alt = 'photo grid' 
                 className = 'hero--img'
             />
