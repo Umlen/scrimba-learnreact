@@ -3,7 +3,7 @@ const Card = (props) => {
         <div className = 'card'>
             <p className = 'card--state'>{props.state}</p>
             <img 
-                src = {props.image}
+                src = {`../images/${props.image}`}
                 alt = 'Katie Zaferes photo'
                 className = 'card--img'
             />
@@ -20,7 +20,7 @@ const Card = (props) => {
             </div>
             <p className = 'card_name'>{props.title}</p>
             <p>
-                <span className = 'bold-text'>From {props.price}</span> / person
+                <span className = 'bold-text'>From ${props.price}</span> / person
             </p>
         </div>
     );
