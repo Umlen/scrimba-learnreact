@@ -1,11 +1,9 @@
-const Card = () => {
+const Card = (props) => {
     return (
         <div className = 'card'>
-            <p className = 'card--state'>
-                SOLD OUT
-            </p>
+            <p className = 'card--state'>{props.state}</p>
             <img 
-                src = '../images/katie-zaferes.png'
+                src = {props.image}
                 alt = 'Katie Zaferes photo'
                 className = 'card--img'
             />
@@ -16,15 +14,13 @@ const Card = () => {
                     className = 'card--rating_icon'
                 />
                 <p className = 'card--rating_text'>
-                    5.0 
-                    <span className = 'gray-text'> (6) • USA</span>
+                    {props.rating}
+                    <span className = 'gray-text'> ({props.rewiewCount}) • {props.country}</span>
                 </p>
             </div>
-            <p className = 'card_name'>
-                Life lessons with Katie Zaferes
-            </p>
+            <p className = 'card_name'>{props.title}</p>
             <p>
-                <span className = 'bold-text'>From $136</span> / person
+                <span className = 'bold-text'>From {props.price}</span> / person
             </p>
         </div>
     );
