@@ -53,18 +53,19 @@ body {
 }
 
 .cards-list {
+  margin: 30px 36px;
   display: flex;
   gap: 36px;
-  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin-bottom: 30px;
+  overflow-x: auto;
 }
 
 .card {
   position: relative;
   width: 176px;
   font-size: 12px;
+  flex: 0 0 auto; 
 }
 
 .card--img {
@@ -80,6 +81,7 @@ body {
   background-color: #fff;
   padding: 5px 6px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .card--rating {

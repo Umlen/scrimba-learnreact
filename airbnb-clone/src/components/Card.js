@@ -1,7 +1,14 @@
 const Card = (props) => {
+    let cardState = null;
+    if (props.openSpots === 0) {
+        cardState = 'SOLD OUT';
+    } else if (props.location === 'Online') {
+        cardState = 'ONLINE';
+    }
+
     return (
         <div className = 'card'>
-            <p className = 'card--state'>{props.state}</p>
+            {cardState && <p className = 'card--state'>{cardState}</p>}
             <img 
                 src = {`../images/${props.image}`}
                 alt = 'Katie Zaferes photo'
@@ -15,7 +22,7 @@ const Card = (props) => {
                 />
                 <p className = 'card--rating_text'>
                     {props.rating}
-                    <span className = 'gray-text'> ({props.rewiewCount}) • {props.country}</span>
+                    <span className = 'gray-text'> ({props.rewiewCount}) • {props.location}</span>
                 </p>
             </div>
             <p className = 'card_name'>{props.title}</p>
