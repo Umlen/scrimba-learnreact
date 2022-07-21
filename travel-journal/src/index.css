@@ -21,7 +21,8 @@ body {
 
 #root {
   max-width: 70%;
-  margin: 2rem auto;
+  margin: auto;
+  padding: 2rem 0;
 }
 
 .navbar {
@@ -113,4 +114,36 @@ body {
 .place--info_description {
   text-align: justify;
   line-height: 1.5rem;
+}
+
+.footer {
+  background-color: #F55A5A;
+  color: #fff;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 20px 15px -2px rgba(255, 172, 172, .5);
+}
+
+.footer_text {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  margin-right: 5px;
+}
+
+.footer_link {
+  color: #2B283A;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+
+.footer_link:hover {
+  color: #fff;
+  display: inline-block;
+  border-bottom: 1px dashed #fff;
 }

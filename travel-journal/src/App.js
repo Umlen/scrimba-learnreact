@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Place from './components/Place';
+import Footer from './components/Footer';
 import placesData from './data';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           )
         }
       </main>
+      <Footer />
     </>
   );
 }
